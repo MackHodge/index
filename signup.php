@@ -1,3 +1,6 @@
+<?php 
+include 'server.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +11,9 @@
 
 </script>
 <style>
+.error {
+color: #FF0000;
+}
 
 .logo {
 	cursor :pointer;
@@ -89,38 +95,40 @@ button:hover {
 </style>
 </head>
 <body>
+
+  
 	<div class="logo">
 <a href="HomePage.html">    
 	<img   src="images/HadouLogo.png">
 </a>
 </div>
 
-<form action="/action_page.php" style="border:1px solid #ccc">
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" style="border:1px solid #ccc">
+  
   <div class="container">
     <h1>Create Account</h1>
 
     <hr>
-    <label for="UserName"><b>User Name</b></label>
-    <input type="text" placeholder="" name="UserN" required>
+    <label for="UserNameform"><b>Name</b></label>
+    <input type="text" name="username" value="<?php echo $name;?>">
+  <span class="error"> <?php echo $nameErr;?></span>
+  <br><br>
+    <label><b>Email</b></label>
+    <input type="text"  name="email" value="<?php echo $email;?>" required>
+    <span class="error">* <?php echo $emailErr;?></span>
+  <br><br>
+    <label><b>Password</b></label>
+    <input type="password"  name="password" required>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="" name="psw" required>
-
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="" name="psw-repeat" required>
+    <label ><b>Repeat Password</b></label>
+    <input type="password" placeholder="" name="rpassword" required>
     
-    <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-    </label>
-    
+  
     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
     <div class="clearfix">
      
-      <button type="submit" class="signupbtn">Create Account</button>
+      <button type="submit" class="signupbtn" name="reg_user">Create Account</button>
     </div>
   </div>
 </form>
