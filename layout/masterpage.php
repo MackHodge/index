@@ -1,72 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-                                     <title>Hadou</title>
+    <title>Hadou</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-   
+    <!--bootstrap script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-
-
-<!--bootstrap script-->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-
-                      <!--Css Navbar-->
-                       <link rel="stylesheet" type="text/css" href="../style/HomePageStyle1.css">
-                       <link rel="stylesheet" type="text/css" href="../style/StyleFooter.css">
-                       <!--Bootstrap css-->
-                       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-
+    <!--Css Navbar-->
+   <link rel="stylesheet" type="text/css" href="../style/HomePageStyle1.css">
+   <link rel="stylesheet" type="text/css" href="../style/StyleFooter.css">
+   <!--Bootstrap css-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
   </head>
   <body>
 
-        <!--navbar close-->
- <div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="../productPage.html">Today's Deals</a>
-  <a href="#about">About</a>
-  <a href="../help.html">Help & Contact</a>
-
- <ul class="nav navbar-nav navbar-right">
-  <!--Register-->
-      <li><a href="../signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-
-
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-
-  <input type="text" placeholder="Search..">
-
-     <button type="Search" class="btn btn-danger">Search</button>
-          
+    <!--NAVEGATION BAR-->
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="../product.html">Products</a>
+      <a href="#about">About</a>
+      <a href="../help.html">Help & Contact</a>
+        <!--REGISTER-->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+          <input type="text" placeholder="Search..">
+            <button type="Search" class="btn btn-danger">Search</button>
     </div>  
 
 
 
 
-<!--Carusel-->
-<div class="container">
-                  
-       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                     <!--Carusel-->
+    <div class="container">
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+        <ol class="carousel-indicators">
+         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#myCarousel" data-slide-to="1"></li>
+         <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
@@ -83,45 +66,25 @@
       </div>
     </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
+
+                                 <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+
+                      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
 
         <!--Close Carusel-->
 
-                                      <!--navbar close
-
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      <a class="navbar-brand" href="#">EJ Media</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">News</a></li>
-    <li><a href="#">Lifestyle</a></li>
-    <li><a href="#">Entertainment</a></li>
-    </ul> 
-    <form class="navbar-form navbar-right">
-       <div class="form-group">
-         <input type="text" class="form-control" placeholder="Search">
-     </div>
-     <button type="submit" class="btn btn-danger">Submit</button>
-          </form>
-    </div>  
-  </nav>        
--->
+                                      <!--navbar close-->
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
