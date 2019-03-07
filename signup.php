@@ -98,7 +98,7 @@ button:hover {
 
   
 	<div class="logo">
-<a href="HomePage.html">    
+<a href="../layout/masterpage.php">    
 	<img   src="images/HadouLogo.png">
 </a>
 </div>
@@ -112,6 +112,10 @@ button:hover {
     <label for="UserNameform"><b>Name</b></label>
     <input type="text" name="username" value="<?php echo $name;?>">
   <span class="error"> <?php echo $nameErr;?></span>
+  <br><br>
+     <label for="UserNameform"><b>Last Name</b></label>
+    <input type="text" name="lastname" value="<?php echo $lastname;?>">
+  <span class="error"> <?php echo $lastnameErr;?></span>
   <br><br>
     <label><b>Email</b></label>
     <input type="text"  name="email" value="<?php echo $email;?>" required>

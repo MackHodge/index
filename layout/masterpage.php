@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-                                     <title>EmpireBetaSite</title>
+                                     <title>Hadou</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -23,8 +23,8 @@
 
 
                       <!--Css Navbar-->
-                       <link rel="stylesheet" type="text/css" href="style/HomePageStyle1.css">
-                       <link rel="stylesheet" type="text/css" href="style/StyleFooter.css">
+                       <link rel="stylesheet" type="text/css" href="../style/HomePageStyle1.css">
+                       <link rel="stylesheet" type="text/css" href="../style/StyleFooter.css">
                        <!--Bootstrap css-->
                        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -36,13 +36,13 @@
         <!--navbar close-->
  <div class="topnav">
   <a class="active" href="#home">Home</a>
-  <a href="productPage.html">Today's Deals</a>
+  <a href="../productPage.html">Today's Deals</a>
   <a href="#about">About</a>
-  <a href="help.html">Help & Contact</a>
+  <a href="../help.html">Help & Contact</a>
 
  <ul class="nav navbar-nav navbar-right">
   <!--Register-->
-      <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="../signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 
 
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -71,15 +71,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="images/conWorkers.jpg" alt="Los Angeles" style="width:100%;">
+        <img src="../images/conWorkers.jpg" alt="Los Angeles" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="images/manWorkers.jpeg" alt="Chicago" style="width:100%;">
+        <img src="../images/manWorkers.jpeg" alt="Chicago" style="width:100%;">
       </div>
     
       <div class="item">
-        <img src="images/computerHarw.jpg" alt="New york" style="width:100%;">
+        <img src="../images/computerHarw.jpg" alt="New york" style="width:100%;">
       </div>
     </div>
 
@@ -149,7 +149,7 @@
     <!--Footer-->
 <div class="footer">
   
-  <a href="Terms.html"><p>Conditions of Use</p></a>
+  <a href="../Terms.html"><p>Conditions of Use</p></a>
 </div>
 
 <!--Footer close-->
